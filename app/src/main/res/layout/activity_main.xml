@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.eightfoldpath.peachtreegrowlercompany.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/green_sign_logo_40_22"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#408c3c"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peachtree Growler Co."
+        android:layout_below="@+id/logo"
+        android:fontFamily="sans-serif"
+        android:textSize="22dp"
+        android:textColor="@android:color/white"
+        android:background="#f6c231"
+        />
+
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/name"
+        android:background="#f6c231"
+        >
+
+            <ImageView
+                android:src="@drawable/icon_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+               />
+
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:text="5450 Peachtree Pkwy"
+                />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/city_state_zip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:background="#f6c231"
+        android:paddingLeft="24dp"
+        android:text="Peachtree Corners, GA 30092"
+        />
+
+    <LinearLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/city_state_zip"
+        android:background="#f6c231"
+        >
+
+        <ImageView
+            android:src="@drawable/icon_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:background="#f6c231"
+            android:text="(770) 686-7925"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/taps_and_growlers"
+        android:src="@drawable/taps_and_growlers"
+        android:layout_below="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6c231"
+        />
+
+
+</RelativeLayout>
